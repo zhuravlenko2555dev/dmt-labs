@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/dmt/{lab}', 'DMTController@index');
+Route::post('/dmt/{lab}', 'DMTController@uploadFile');
+//Route::delete('/dmt', 'DMTController@deleteFile');

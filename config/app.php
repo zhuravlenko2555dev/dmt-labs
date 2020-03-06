@@ -178,6 +178,7 @@ return [
 
         /** My Providers for this project */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
@@ -229,6 +230,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        /** My aliases */
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
     ],
 
