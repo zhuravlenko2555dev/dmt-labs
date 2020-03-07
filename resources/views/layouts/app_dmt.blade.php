@@ -19,6 +19,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        .no-container {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    </style>
 </head>
 <body>
 <div id="app">

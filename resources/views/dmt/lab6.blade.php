@@ -3,7 +3,7 @@
 @section('content')
     {{--    container--}}
     <div class="">
-        <div class="row">
+        <div class="row no-container">
             <div class="col-10">
                 <form id="showResult" class="form-inline mt-4 mb-4" action={{"/dmt/" . $data["lab"]}}>
                     <input class="form-control mr-2 coefficient-of-pessimism" style="width: 130px" @if(isset($data["x"]) && !empty($data["x"])) {{'value=' . $data["x"][0]}} @endif type="number" step="any" name="x[]" placeholder="X1" required>

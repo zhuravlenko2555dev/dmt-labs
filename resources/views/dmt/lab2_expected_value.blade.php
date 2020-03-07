@@ -3,7 +3,7 @@
 @section('content')
     {{--    container--}}
     <div class="">
-        <div class="row">
+        <div class="row no-container">
             @include('dmt.dmt_sidebar')
 
             <div class="col-10">
