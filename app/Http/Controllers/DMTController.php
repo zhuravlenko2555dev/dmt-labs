@@ -87,7 +87,7 @@ class DMTController extends Controller {
         $file->move($destinationPath, $uuid_of_file . "." . $file_extension);
 
         $dataFile["original_name"] = $file->getClientOriginalName();
-        $dataFile["real_path"] = public_path() . "\\". $destinationPath . "\\" . $uuid_of_file . "." . $file_extension;
+        $dataFile["real_path"] = public_path() . DIRECTORY_SEPARATOR. $destinationPath . DIRECTORY_SEPARATOR . $uuid_of_file . "." . $file_extension;
         $dataFile["uuid"] = $uuid_of_file;
         $request->session()->put("files_" . $lab . "." . $dataFile["uuid"], $dataFile);
 
