@@ -7,6 +7,7 @@
             @include('dmt.dmt_sidebar')
 
             <div class="col-10">
+                @include('dmt.instruction')
                 <div class="card">
                     @if(!empty($data["file_selected"]))
                         <h5 class="card-header">Файл: <span class="text-muted">{{$data["files"][$data["file_selected"]]["original_name"]}}</span></h5>
