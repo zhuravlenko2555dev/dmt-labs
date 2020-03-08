@@ -1,4 +1,4 @@
-<div class="col-2">
+<div class="col-12 col-md-2">
     <form class="mb-4" action={{"/dmt/" . $data["lab"]}} method="post" enctype="multipart/form-data">
         <div class="form-group">
             @csrf

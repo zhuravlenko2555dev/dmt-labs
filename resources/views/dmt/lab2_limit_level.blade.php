@@ -4,7 +4,7 @@
     {{--    container--}}
     <div class="">
         <div class="row no-container">
-            <div class="col-10">
+            <div class="col-12 col-md-10">
                 @include('dmt.instruction')
                 <form id="showResult" class="form-inline mt-4 mb-4" action={{"/dmt/" . $data["lab"]}}>
                     <input class="form-control mr-2 coefficient-of-pessimism" style="width: 130px" @if(isset($data["i1"]) && !empty($data["i1"])) {{'value=' . $data["i1"]}} @endif type="number" step="any" name="i1" placeholder="I1 значення" required>
