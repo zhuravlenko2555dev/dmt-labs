@@ -6,7 +6,7 @@
         <div class="row no-container">
             @include('dmt.dmt_sidebar')
 
-            <div class="col-12 col-md-10">
+            <div class="col-md-12 col-lg-10">
                 @include('dmt.instruction')
                 <div class="card">
                     @if(!empty($data["file_selected"]))
