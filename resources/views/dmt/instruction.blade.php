@@ -26,7 +26,7 @@
                     <p>3. Натиснути кнопку "Вивести результат"</p>
                 @break
                 @case("lab2_average_expected_value")
-                    <p>1. Спочатку потрібно вибрати ексель файл і загрузити його. Приклад файлу: <a href="{{asset('excel/lab2_expected_value_dispersion.xlsx')}}">lab2_expected_value_dispersion.xlsx</a></p>
+                    <p>1. Спочатку потрібно вибрати ексель файл і загрузити його. Приклад файлу: <a href="{{asset('excel/lab2_average_expected_value.xlsx')}}">lab2_average_expected_value.xlsx</a></p>
                     <p>2. Знизу під відображеням даних з файлу ми можемо вибрати яку альтернативу обрахувати: кращу або гіршу.</p>
                     <p>3. Натиснути кнопку "Вивести результат"</p>
                 @break
