@@ -138,10 +138,10 @@
                         }
                     @endphp
                     <div class="card">
-                        <h5 class="card-header">Результат:</span></h5>
+                        <h5 class="card-header" style="color: green"><b>Результат:</b></h5>
                         <div class="card-body">
-                            <p class="card-text">Значення: {{$result_data["val"]}}</p>
-                            <p class="card-text">Номер рядка альтернативи: {{$result_data["number_of_row_of_alternative"] + 1}}</p>
+{{--                            <p class="card-text">Значення: {{$result_data["val"]}}</p>--}}`
+                            <h5 class="card-text"><b>{{$data["alternative"] == "worse" ? "Гірша" : "Краща"}} альтернатива: A{{$result_data["number_of_row_of_alternative"] + 1}}</b></h5>
                         </div>
                     </div>
                 @endif

@@ -67,7 +67,7 @@
                         $result_data = $lab4->analysis_of_hierarchies_calculate($lab4->dmt_spreadsheet, $data["alternative"] == "better");
                     @endphp
                     <div class="card">
-                        <h5 class="card-header">Результат:</span></h5>
+                        <h5 class="card-header" style="color: green"><b>Результат:</b></h5>
                         <div class="card-body">
                             @foreach($result_data["strategy_array"] as $key => $strategy)
                                 <p class="card-text">Університет {{chr(65 + $key)}}:
@@ -85,8 +85,8 @@
                                     {{' = ' . $result_data["strategy_sum"][$key]}}
                                 </p>
                             @endforeach
-                            <p class="card-text">Значення: {{$result_data["val"]}}</p>
-                            <p class="card-text">Альтернатива: {{$result_data["alternative"] + 1}}</p>
+{{--                            <p class="card-text">Значення: {{$result_data["val"]}}</p>--}}
+                            <h5 class="card-text"><b>{{$data["alternative"] == "worse" ? "Гірша" : "Краща"}} альтернатива: Університет {{chr(65 + $result_data["alternative"])}}</b></h5>
                         </div>
                     </div>
                 @endif

@@ -23,9 +23,9 @@
 
                     @endphp
                     <div class="card">
-                        <h5 class="card-header">Результат:</h5>
+                        <h5 class="card-header" style="color: green"><b>Результат:</b></h5>
                         <div class="card-body">
-                            <p class="card-text">Квадратна матриця суміжності:</p>
+                            <h5 class="card-text"><b>Квадратна матриця суміжності:</b></h5>
                             <table class="table table-responsive">
                                 <thead>
                                 <tr>
@@ -73,9 +73,10 @@
                                 </p>
                             @endforeach
                             <br>
+                            <h5 class="card-text"><b>Коефіцієнти значимості параметрів:</b></h5>
                             @foreach($result_data["p"][1] as $key => $row)
-                                <p class="card-text">P<sub>{{$key + 1}}</sub><sup>0</sup> = {{$row}}/{{array_sum($result_data["p"][1])}}
-                                    {{' = ' . $row / array_sum($result_data["p"][1])}}
+                                <p class="card-text"><b>P<sub>{{$key + 1}}</sub><sup>0</sup> = {{$row}}/{{array_sum($result_data["p"][1])}}
+                                    {{' = ' . $row / array_sum($result_data["p"][1])}}</b>
                                 </p>
                             @endforeach
                         </div>

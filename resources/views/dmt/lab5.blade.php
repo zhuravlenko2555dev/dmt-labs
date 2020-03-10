@@ -127,9 +127,9 @@
                         }
                     @endphp
                     <div class="card">
-                        <h5 class="card-header">Результат:</h5>
+                        <h5 class="card-header" style="color: green"><b>Результат:</b></h5>
                         <div class="card-body">
-                            <p class="card-text">Матриця показників ефективності:</p>
+                            <h5 class="card-text"><b>Матриця показників ефективності:</b></h5>
                             <table class="table table-responsive">
                                 <thead>
                                 <tr>
@@ -189,7 +189,7 @@
                             </table>
 
                             <br>
-                            <p class="card-text">Нормована ігрова матриця:</p>
+                            <h5 class="card-text"><b>Нормована ігрова матриця:</b></h5>
                             <table class="table table-responsive">
                                 <thead>
                                 <tr>
@@ -231,7 +231,7 @@
                             </table>
 
                             <br>
-                            <p class="card-text">Ігрова матриця з врахуванням вагових коефіцієнтів:</p>
+                            <h5 class="card-text"><b>Ігрова матриця з врахуванням вагових коефіцієнтів:</b></h5>
                             <table class="table table-responsive">
                                 <thead>
                                 <tr>
@@ -283,8 +283,8 @@
                                     {{' = ' . $result_data["sum_of_maximize_params"][$key] / $result_data["sum_of_minimize_params"][$key]}}
                                 </p>
                             @endforeach
-                            <p class="card-text">Значення: {{$result_data["val"]}}</p>
-                            <p class="card-text">Альтернатива: {{$result_data["weight_coefficient_matrix"][$result_data["alternative"]][0]}}</p>
+{{--                            <p class="card-text">Значення: {{$result_data["val"]}}</p>--}}
+                            <h5 class="card-text"><b>{{$data["alternative"] == "worse" ? "Гірша" : "Краща"}} альтернатива: {{$result_data["weight_coefficient_matrix"][$result_data["alternative"]][0]}}</b></h5>
                         </div>
                     </div>
                 @endif

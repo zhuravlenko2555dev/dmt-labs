@@ -22,7 +22,7 @@
                         $result_data = $lab2->limit_level_calculate($data["i1"], $data["i2"], $data["a1"], $data["a2"]);
                     @endphp
                     <div class="card">
-                        <h5 class="card-header">Результат:</h5>
+                        <h5 class="card-header" style="color: green"><b>Результат:</b></h5>
                         <div class="card-body">
                             <p class="card-text">ln(I) - (I/{{$data["a2"]}}) = {{$result_data["expected_deficit_limit"]}}</p>
                             <p class="card-text">ln(I) - (I/{{$data["a1"]}}) = {{$result_data["expected_surpluses_limit"]}}</p>
@@ -50,7 +50,7 @@
                                 </tr>
                                 </tbody>
                             </table>
-                            <p class="card-text">З таблиці видно, що обидві умови виконуються для I, з інтервалу ({{($result_data["suitable_start_interval_index"] + intval($data["i1"])) . "," . ($result_data["suitable_end_interval_index"] + intval($data["i1"]))}})</p>
+                            <h5 class="card-text"><b>З таблиці видно, що обидві умови виконуються для I, з інтервалу ({{($result_data["suitable_start_interval_index"] + intval($data["i1"])) . "," . ($result_data["suitable_end_interval_index"] + intval($data["i1"]))}})</b></h5>
                         </div>
                     </div>
                 @endif

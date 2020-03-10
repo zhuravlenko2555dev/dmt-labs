@@ -57,7 +57,7 @@
                         $result_data = $lab2->expected_value_calculate($lab2->dmt_spreadsheet, $data["c1"], $data["c2"], $data["n"]);
                     @endphp
                     <div class="card">
-                        <h5 class="card-header">Результат:</span></h5>
+                        <h5 class="card-header" style="color: green"><b>Результат:</b></h5>
                         <div class="card-body">
                             <table class="table table-responsive">
                                 <thead>
@@ -79,8 +79,8 @@
                                 @endforeach
                                 </tbody>
                             </table>
-                            <p class="card-text">Значення: {{$result_data["val"]}}</p>
-                            <p class="card-text">Номер рядка альтернативи: {{$result_data["number_of_row_of_alternative"] + 1}}</p>
+{{--                            <p class="card-text">Значення: {{$result_data["val"]}}</p>--}}
+                            <h5 class="card-text"><b>Альтернатива: T{{$result_data["number_of_row_of_alternative"] + 1}}</b></h5>
                         </div>
                     </div>
                 @endif
