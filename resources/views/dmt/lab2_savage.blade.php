@@ -69,7 +69,7 @@
                     <div class="card">
                         <h5 class="card-header" style="color: green"><b>Результат:</b></h5>
                         <div class="card-body">
-                            <p class="card-text">Матриця ризиків:</p>
+                            <h5 class="card-text"><b>Матриця ризиків:</b></h5>
                             <table class="table table-responsive">
                                 <thead>
                                 <tr>
